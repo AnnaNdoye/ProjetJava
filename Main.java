@@ -118,16 +118,5 @@ class Main {
             Supermat.permuterLignes(matrice6, 0, 2);
             System.out.println("Après permutation, la fonction contiguïté retourne: " + Supermat.contiguité(matrice6));
         }
-        
-        System.out.println("\nTest de la libération de mémoire:");
-        Supermat matrice7 = Supermat.allouerSupermat(2, 2);
-        if (matrice7 != null) {
-            Supermat.remplirMatrice(matrice7);
-            System.out.println("Les dimensions avant libération sont: " + matrice7.getNl() + "x" + matrice7.getNc());
-            
-            matrice7.libererSupermat();
-            System.out.println("Les dimensions après libération sont: " + matrice7.getNl() + "x" + matrice7.getNc());
-            System.out.println("La libération de mémoire a été effectuée avec succès");
-        }
     }
 }
