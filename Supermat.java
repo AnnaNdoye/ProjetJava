@@ -201,18 +201,6 @@ public class Supermat {
         return enOrdre ? 2 : 1;
     }
     
-    // 9. Libération de mémoire (Fonction libererSupermat)
-    public void libererSupermat() {
-        if (this.ligne != null) {
-            for (int i = 0; i < this.nl; i++) {
-                this.ligne[i] = null;
-            }
-            this.ligne = null;
-        }
-        this.nl = 0;
-        this.nc = 0;
-    }
-    
     // Méthodes utilitaires
     public int getNl() {
         return nl;
