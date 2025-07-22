@@ -1,7 +1,7 @@
 public class Supermat {
-    private int nl;
-    private int nc;
-    private double[][] ligne;
+    private final int nl;
+    private final int nc;
+    private final double[][] ligne;
     
     public Supermat(int nl, int nc) 
     {
